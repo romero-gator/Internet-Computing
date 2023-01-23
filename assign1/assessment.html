@@ -1,19 +1,42 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Relevant title</title>
+        <title>Assessment Key</title>
+        <link rel="icon" type="image/x-icon" href="../Assets/images/Hogwarts-Logo.png">
         <link rel="stylesheet" href="../style.css">
     </head>
-    <body>
-        <h1 class="title">Assessment items answer key</h1>
-        <h3 class="subheading">structure wtih CSS</h3>
-        <hr>
-        <div class="glass-container">
-            <p>provide answer feedback based on user's choice</p>
-            <p>use anchor tag to label each possible feedback messages with response correctness and feedback</p>
-            <p>thus when I link from other page it will link directly to the appropriate info on this page</p>
-            <p>below feedback, link back to original page with target lesson content and assessment items</p>
+    <body class="hogwarts-bg">
+        <h1 class="title">Assessment Key</h1>
+        <hr class="large-break">
+        <div class="glass-container" id="correct">
+            <h2 class="title green-color">Correct!</h2>
+            <p><a href="index.html#assessment">Click here to return to the assessment.</a></p>
         </div>
-        <hr>
+        <hr class="large-break">
+        <div class="glass-container" id="incorrect1">
+            <h2 class="title red-color">Incorrect!</h2>
+            <p class="left-align">The qualities described in the question do not necessarily correspond to the house you selected.</p><p class="left-align"><a href="index.html#hufflepuff">Click here to be directed towards information that can guide you to the correct answer.</a></p>
+        </div>
+        <hr class="large-break">
+        <div class="glass-container" id="incorrect2">
+            <h2 class="title red-color">Incorrect!</h2>
+            <p class="left-align">Slytherin cannot be found at the location you selected.</p><p class="left-align"><a href="index.html#slytherin">Click here to be directed towards information that can guide you to the correct answer.</a></p>
+        </div>
+        <hr class="large-break">
+        <div class="glass-container" id="incorrect3">
+            <h2 class="title red-color">Incorrect!</h2>
+            <p class="left-align">The ghost of Gryffindor is not known for what you selected.</p><p class="left-align"><a href="index.html#gryffindor">Click here to be directed towards information that can guide you to the correct answer.</a></p>
+        </div>
+        <hr class="large-break">
+        <div class="glass-container" id="incorrect4">
+            <h2 class="title red-color">Incorrect!</h2>
+            <p class="left-align">Helena did not steal what you selected from her mother, Rowena.</p><p class="left-align"><a href="index.html#ravenclaw">Click here to be directed towards information that can guide you to the correct answer.</a></p>
+        </div>
+        <hr class="large-break">
+        <div class="glass-container" id="incorrect5">
+            <h2 class="title red-color">Incorrect!</h2>
+            <p class="left-align">The witch or wizard you selected is not a member of house Hufflepuff.</p><p class="left-align"><a href="index.html#hufflepuff">Click here to be directed towards information that can guide you to the correct answer.</a></p>
+        </div>
+        <hr class="large-break">
     </body>
 </html>
