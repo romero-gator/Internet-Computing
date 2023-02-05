@@ -1,0 +1,205 @@
+@font-face {
+    font-family: Acme;
+    src: url(Assets/fonts/Acme-Regular.ttf);
+}
+
+@font-face {
+    font-family: Hero;
+    src: url(Assets/fonts/HeroesLegend.ttf);
+}
+
+h2,
+h3,
+p,
+a,
+label,
+input {
+    font-family: Acme;
+    color: white;
+}
+
+h1 {
+    font-family: Hero;
+    font-size: 96px;
+}
+
+h3 {
+    font-size: 45px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+p,
+label,
+input {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.big-label {
+    font-weight: 800;
+    font-size: 45px;
+}
+
+div {
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    color: rgb(255, 234, 0);
+    -webkit-text-stroke: 8px blue;
+    letter-spacing: -12px;
+    margin-bottom: 0px;
+}
+
+.subtitle {
+    color: black;
+    text-align: center;
+}
+
+.copyright {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+}
+
+.container {
+    max-width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 70px;
+    background: rgba(24, 20, 20, 0.987);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .container .nickname {
+    position: relative;
+  }
+  
+  .container .nickname input {
+    width: 100%;
+    padding: 5px 0;
+    color: #ffffff;
+    margin-bottom: 5px;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    outline: none;
+    background: transparent;
+  }
+  
+  .container .nickname label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    color: #ffffff;
+    pointer-events: none;
+    transition: .5s;
+    letter-spacing: 2px;
+  }
+  
+  .container .nickname input:focus ~ label,
+  .container .nickname input:valid ~ label {
+    top: -25px;
+    left: 0;
+    color: #bdb8b8;
+    font-size: 20px;
+  }
+  
+  .container form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+
+  .container form .done a {
+    color: #03f40f;
+  }
+
+  .container form .reset a {
+    color: crimson;
+  }
+
+  .container .done a:hover {
+    background: #03f40f;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03f40f,
+                0 0 25px #03f40f,
+                0 0 50px #03f40f,
+                0 0 100px #03f40f;
+  }
+
+  .container .reset a:hover {
+    background: crimson;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px crimson,
+                0 0 25px crimson,
+                0 0 50px crimson,
+                0 0 100px crimson;
+  }
+  
+  .container form .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  input[type="radio"], 
+  input[type="checkbox"] {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+  }
+
+  .option-box{
+    align-items: left;
+    padding-left: 30px;
+  }
+
+  .select-box {
+    display: flex;
+    align-items: baseline;
+  }
+
+  select,
+  option {
+    font-family: Acme;
+    color: black;
+    font-size: 30px;
+  }
+
+  select {
+    margin-left: 40px;
+    height: 40px;
+    width: 150px;
+    border-radius: 4px;
+  }
+
+  hr {
+    border: 0;
+  }
+
+  input[type="reset"] {
+    background: none;
+    border: none;
+    letter-spacing: 4px;
+    color: inherit;
+  }
+
+  input[type="submit"] {
+    background: none;
+    border: none;
+    letter-spacing: 4px;
+    color: inherit;
+  }

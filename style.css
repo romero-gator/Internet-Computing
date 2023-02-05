@@ -94,13 +94,6 @@ hr {
     background-size: cover;
 }
 
-.pokemon-bg {
-    background: url(Assets/images/forest_art.jpg) no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-}
-
 .hogwarts-img {
     border-radius: 16px;
     max-width: 70%;
