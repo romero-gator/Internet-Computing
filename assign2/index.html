@@ -4,179 +4,127 @@
         <title>Starter Pokémon</title>
         <link rel="icon" type="image/x-icon" href="../Assets/images/pokeball.png">
         <link rel="stylesheet" href="../pokemon-style.css">
+        <script src="functions.js"></script>
     </head>
-    <body class="background">
+    <body class="pokemon-bg">
         <h1 class="title">Starter Pokémon</h1>
-        <p class="subtitle">Find the perfect starter Pokemon to begin your journey with</p>
+        <p class="subtitle">Find the perfect starter Pokémon to begin your journey with</p>
         <hr>
-        <div class="container">
+        <div class="container" id="form-begin">
 
             <form>
-
-                <div class="nickname">
-                    <input required="" name="" type="text">
-                    <label class="big-label">Nickname:</label>
+                <h3 class="text-box-title">Nickname:</h3>
+                <div class="text-field">
+                    <input type="text" id="nickname" name="nickname" placeholder="Sparky" autocomplete="off">
                 </div>
 
                 <h3>Height:</h3>
-                <div class="option-box">
+                <div class="form-group" id="height">
                     <div>
-                        <label>
-                            <input type="radio" name="height">
-                            Short
-                        </label>
+                        <input type="radio" name="height" id="height" value="Short">
+                        <label for="height">Short</label>
                     </div>
                     <div>
-                        <label>
-                            <input type="radio" name="height">
-                            Average
-                        </label>
+                        <input type="radio" name="height" id="height" value="Average">
+                        <label for="height">Average</label>
                     </div>
                     <div>
-                        <label>
-                            <input type="radio" name="height">
-                            Tall
-                        </label>
+                        <input type="radio" name="height" id="height" value="Tall">
+                        <label for="height">Tall</label>
                     </div>
                 </div>
 
                 <h3>Weight:</h3>
-                <div class="option-box">
+                <div class="form-group" id="weight">
                     <div>
-                        <label>
-                            <input type="radio" name="weight">
-                            0-5 lbs
-                        </label>
+                        <input type="radio" name="weight" id="weight" value="Light">
+                        <label for="weight">Light</label>
                     </div>
                     <div>
-                        <label>
-                            <input type="radio" name="weight">
-                            5-10 lbs
-                        </label>
+                        <input type="radio" name="weight" id="weight" value="Average">
+                        <label for="weight">Average</label>
                     </div>
                     <div>
-                        <label>
-                            <input type="radio" name="weight">
-                            10-15 lbs
-                        </label>
+                        <input type="radio" name="weight" id="weight" value="Heavy">
+                        <label for="weight">Heavy</label>
                     </div>
                 </div>
 
                 <h3>Category:</h3>
-                <div class="option-box">
+                <div class="form-group" id="category">
                     <div>
-                        <label>
-                            <input type="checkbox" name="category">
-                            Reptile/ Amphibian
-                        </label>
+                        <input type="checkbox" name="category" id="category" value="Reptile/ Amphibian">
+                        <label for="category">Reptile/ Amphibian</label>
                     </div>
                     <div>
-                        <label>
-                            <input type="checkbox" name="category">
-                            Fish
-                        </label>
+                        <input type="checkbox" name="category" id="category" value="Fish">
+                        <label for="category">Fish</label>
                     </div>
                     <div>
-                        <label>
-                            <input type="checkbox" name="category">
-                            Bird
-                        </label>
+                        <input type="checkbox" name="category" id="category" value="Bird">
+                        <label for="category">Bird</label>
                     </div>
                     <div>
-                        <label>
-                            <input type="checkbox" name="category">
-                            Mammal
-                        </label>
+                        <input type="checkbox" name="category" id="category" value="Mammal">
+                        <label for="category">Mammal</label>
                     </div>
                     <div>
-                        <label>
-                            <input type="checkbox" name="category">
-                            Plant
-                        </label>
+                        <input type="checkbox" name="category" id="category" value="Plant">
+                        <label for="category">Plant</label>
                     </div>
                 </div>
 
                 <h3>Type:</h3>
-                <div class="option-box">
+                <div class="form-group" id="type">
                     <div>
-                        <label>
-                            <input type="checkbox" name="element">
-                            Grass
-                        </label>
+                        <input type="checkbox" name="type" id="type" value="Grass">
+                        <label for="type">Grass</label>
                     </div>
                     <div>
-                        <label>
-                            <input type="checkbox" name="element">
-                            Fire
-                        </label>
+                        <input type="checkbox" name="type" id="type" value="Fire">
+                        <label for="type">Fire</label>
                     </div>
                     <div>
-                        <label>
-                            <input type="checkbox" name="element">
-                            Water
-                        </label>
+                        <input type="checkbox" name="type" id="type" value="Water">
+                        <label for="type">Water</label>
                     </div>
                     <div>
-                        <label>
-                            <input type="checkbox" name="element">
-                            Electric
-                        </label>
+                        <input type="checkbox" name="type" id="type" value="Electric">
+                        <label for="type">Electric</label>
                     </div>
                     <div>
-                        <label>
-                            <input type="checkbox" name="element">
-                            Poison
-                        </label>
+                        <input type="checkbox" name="type" id="type" value="Poison">
+                        <label for="type">Poison</label>
                     </div>
                     <div>
-                        <label>
-                            <input type="checkbox" name="element">
-                            Flying
-                        </label>
+                        <input type="checkbox" name="type" id="type" value="Flying">
+                        <label for="type">Flying</label>
                     </div>
                     <div>
-                        <label>
-                            <input type="checkbox" name="element">
-                            Ground
-                        </label>
+                        <input type="checkbox" name="type" id="type" value="Ground">
+                        <label for="type">Ground</label>
                     </div>
                     <div>
-                        <label>
-                            <input type="checkbox" name="element">
-                            Fighting
-                        </label>
+                        <input type="checkbox" name="type" id="type" value="Fighting">
+                        <label for="type">Fighting</label>
                     </div>
                     <div>
-                        <label>
-                            <input type="checkbox" name="element">
-                            Dark
-                        </label>
+                        <input type="checkbox" name="type" id="type" value="Dark">
+                        <label for="type">Dark</label>
                     </div>
                     <div>
-                        <label>
-                            <input type="checkbox" name="element">
-                            Ghost
-                        </label>
+                        <input type="checkbox" name="type" id="type" value="Ghost">
+                        <label for="type">Ghost</label>
                     </div>
                     <div>
-                        <label>
-                            <input type="checkbox" name="element">
-                            Psychic
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="checkbox" name="element">
-                            Fairy
-                        </label>
+                        <input type="checkbox" name="type" id="type" value="Psychic">
+                        <label for="type">Psychic</label>
                     </div>
                 </div>
-
                 
                 <div class="select-box">
                     <h3>Region:</h3>
                     <select name="region" id="region">
-                        <option value="Select">Select</option>
                         <option value="Any">Any</option>
                         <option value="Kanto">Kanto</option>
                         <option value="Johto">Johto</option>
@@ -192,17 +140,33 @@
 
                 <div class="form-buttons">
                     <div class="reset">
-                        <a><input type="reset" value="RESET"><span></span>
-                        </a>
+                        <a ><input type="reset" value="RESET"></a>
                     </div>
-                    <div class="done">
-                        <a><input type="submit" value="DONE"><span></span>
-                        </a>
+                    <div>
+                        <button type="button" onclick="getPokemon()">DONE</button>
                     </div>
+                </div>
+
+                <div id="form-error">
+                    <p>Please fill out all fields</p>
                 </div>
                 
             </form>
-          </div>
-        <p class="copyright">Copyright © 2023 Antonio Romero. All rights reserved.</p>
+            
+        </div>
+        <hr>
+        <div id="pokemon-container">
+            <h2 id="pokemon-name">Nickname</h2>
+            <p id="species"></p>
+            <img id="pokemon-img" src="">
+            <div class="stats-box">
+                <p>Region:<span id="pokemon-region"></span></p>
+                <p>Category:<span id="pokemon-category"></span></p>
+                <p>Height:<span id="pokemon-height"></span></p>
+                <p>Weight:<span id="pokemon-weight"></span></p>
+                <p>Type:<span id="pokemon-type"></span></p>
+            </div>
+        </div>
+        <p id="copyright">Copyright © 2023 Antonio Romero. All rights reserved.</p>
     </body>
 </html>
