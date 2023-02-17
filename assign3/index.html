@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Statistics</title>
+        <link rel="stylesheet" href="../stats-style.css">
+        <script src="statistics.js"></script>
+    </head>
+    <body>
+        <h1>Statistics</h1>
+        <p>Enter a comma separated list of numbers and recieve statistics about them</p>
+        <hr>
+        <div class="container">
+            <form>
+
+                <h3>Numbers:</h3>
+                <div class="text-field">
+                    <input type="text" id="numbers" name="numbers" placeholder="1,2,3,4,5" autocomplete="off">
+                </div>
+
+                <div class="form-buttons">
+                    <div class="reset">
+                        <a ><input type="reset" value="RESET"></a>
+                    </div>
+                    <div>
+                        <button type="button" onclick="getStats()">DONE</button>
+                    </div>
+                </div>
+
+                <div id="form-error">
+                    <p>Please fill out all fields</p>
+                </div>
+                
+            </form>
+        </div>
+        <hr>
+        <hr>
+        <div class="container" id="stats">
+            <h3>Statistics</h3>
+            <div>
+                <div class="stat-content"><p>N:</p><p id="N"></p></div>
+                <div class="stat-content"><p>Sum:</p><p id="Sum"></p></div>
+                <div class="stat-content"><p>Mean:</p><p id="Mean"></p></div>
+                <div class="stat-content"><p>Median:</p><p id="Median"></p></div>
+                <div class="stat-content"><p>Mode:</p><p id="Mode"></p></div>
+                <div class="stat-content"><p>Max:</p><p id="Max"></p></div>
+                <div class="stat-content"><p>Min:</p><p id="Min"></p></div>
+                <div class="stat-content"><p>Range:</p><p id="Range"></p></div>
+                <div class="stat-content"><p>Variance:</p><p id="Var"></p></div>
+                <div class="stat-content"><p>Standard Deviation:</p><p id="StdDev"></p></div>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <a id="link" href="test.html" target="_blank">Unit Tests</a>
+            <p id="copyright">Copyright © 2023 Antonio Romero. All rights reserved.</p>
+        </div>
+    </body>
+</html>

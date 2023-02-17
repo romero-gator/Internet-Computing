@@ -1,0 +1,178 @@
+@font-face {
+    font-family: Acme;
+    src: url(Assets/fonts/Acme-Regular.ttf);
+}
+
+@font-face {
+    font-family: Hero;
+    src: url(Assets/fonts/HeroesLegend.ttf);
+}
+
+h2,
+h3,
+p,
+label,
+input {
+    font-family: Acme;
+}
+
+h1 {
+    font-family: Hero;
+    font-size: 64px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 45px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-top: 0;
+}
+
+#link {
+    font-family: Acme;
+    font-size: 18px;
+    text-align: center;
+    display: grid;
+}
+
+#link:hover {
+    color: lightsalmon;
+}
+
+.container form h3 {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.container h3 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+p,
+input {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.container p {
+    color: #ffffff;
+    margin: 1px;
+}
+
+#copyright {
+    font-size: 18px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    min-width: 400px;
+    margin: auto;
+    padding: 50px;
+    background: rgba(24, 20, 20, 0.987);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 15px;
+}
+  
+.container .text-field input {
+    width: 90%;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+  
+.container form a,  
+.container form button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+.container form button {
+    color: #03f40f;
+}
+.container form .reset a {
+    color: crimson;
+}
+.container form button:hover {
+    background: #03f40f;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03f40f,
+                0 0 25px #03f40f,
+                0 0 50px #03f40f,
+                0 0 100px #03f40f;
+}
+.container .reset a:hover {
+    background: crimson;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px crimson,
+                0 0 25px crimson,
+                0 0 50px crimson,
+                0 0 100px crimson;
+}
+.container form .form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group {
+    align-items: left;
+    padding-left: 30px;
+}
+
+#form-error {
+    display: none;
+}
+
+#form-error p {
+    text-align: center;
+    color: crimson;
+    margin: 0px;
+    letter-spacing: 2px;
+}
+
+hr {
+    border: none;
+}
+
+input[type="reset"] {
+    background: none;
+    border: none;
+    letter-spacing: 4px;
+    color: inherit;
+}
+
+.container form button {
+    background: none;
+    border: none;
+    font-family: Acme;
+    font-size: 28px;
+}
+
+#stats {
+    display: none;
+}
+
+.stats-box {
+
+}
+
+.stat-content {
+    display: flex;
+    justify-content: space-between;
+}
