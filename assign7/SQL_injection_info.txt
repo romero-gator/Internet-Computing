@@ -1,0 +1,8 @@
+SQL injections are a common attack vector that uses malicious SQL code for backend database manipulation to access information that was not intended to be displayed. 
+This information may include any number of items, including sensitive company data, user lists or private customer details.
+It is very important to protect against these kinds of attacks because they are easy to exploit and can lead to leaking private information which can lead to many major problems.
+There are several effective ways to prevent SQL injection attacks from taking place. 
+The first step is input validation, which is the practice of writing code that can identify illegitimate user inputs. Although this method is rarely foolproof.
+To further protect from attacks, a firewall is used to filter out these threats as well as others.
+
+In my project, I used input validation using php to protect against SQL injection attacks. These methods can be found at each location that I connect with and interact with the database.
